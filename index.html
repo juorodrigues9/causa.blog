@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>causa. — um blog sobre tudo, feito em Araxá</title>
+<meta name="description" content="Causa: onde tudo começa. Um blog aberto e reflexivo sobre Araxá, cultura, aventuras e o que der na telha.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- custom cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"><span id="cursorLabel"></span></div>
+
+<div class="grain"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="wrap nav__wrap">
+    <a href="#topo" class="nav__logo" data-cursor="marca">causa<span class="dot">.</span></a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#manifesto" data-cursor="ver">quem somos</a>
+      <a href="pilar-araxa.html" data-cursor="ver">Araxá &amp; Arredores</a>
+      <a href="pilar-reflexoes.html" data-cursor="ver">reflexões</a>
+      <a href="pilar-cultura.html" data-cursor="ver">cultura</a>
+      <a href="pilar-esportes.html" data-cursor="ver">esportes</a>
+      <a href="pilar-fontes.html" data-cursor="ver">fontes &amp; achados</a>
+      <a href="#convite" data-cursor="ver">assine</a>
+      <a href="https://www.instagram.com/causa.blog" target="_blank" rel="noopener" data-cursor="abrir">redes sociais</a>
+    </nav>
+
+    <a href="colabore.html" class="btn btn--small btn--coral" data-cursor="colabore">colabore</a>
+
+    <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#manifesto">quem somos</a>
+  <a href="pilar-araxa.html">Araxá &amp; Arredores</a>
+  <a href="pilar-reflexoes.html">reflexões</a>
+  <a href="pilar-cultura.html">cultura</a>
+  <a href="pilar-esportes.html">esportes</a>
+  <a href="pilar-fontes.html">fontes &amp; achados</a>
+  <a href="#convite">assine</a>
+  <a href="https://www.instagram.com/causa.blog" target="_blank" rel="noopener">redes sociais ↗</a>
+  <a href="colabore.html">colabore ↗</a>
+</div>
+
+<main id="topo">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="wrap hero__wrap">
+
+      <p class="eyebrow reveal">um blog sobre tudo · feito em Araxá·MG</p>
+
+      <h1 class="hero__title">
+        <span class="reveal reveal--1">causa</span>
+        <span class="hero__title-effect reveal reveal--2">
+          <svg class="hero__arrow" viewBox="0 0 200 60" aria-hidden="true">
+            <path d="M2 44C50 4 120 4 196 30" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="6 10"/>
+            <path d="M178 18l20 12-24 8" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="hero__script">onde tudo começa</span>
+        </span>
+      </h1>
+
+      <div class="hero__foot reveal reveal--3">
+        <p class="hero__lede">
+          Causa e efeito. Efeito e causa. Um espaço aberto pra pensar, sem fórmula
+          pronta — filmes, livros, música, política, hobbies, devaneios e as
+          melhores causas (e cachoeiras) de Araxá.
+        </p>
+        <div class="hero__ctas">
+          <a href="#manifesto" class="btn btn--dark" data-cursor="ler">ler o manifesto ↓</a>
+          <a href="https://www.instagram.com/causa.blog" target="_blank" rel="noopener" class="btn btn--ghost" data-cursor="abrir">@causa.blog</a>
+        </div>
+      </div>
+
+      <div class="hero__badge" aria-hidden="true">
+        <svg viewBox="0 0 140 140" class="hero__badge-spin">
+          <defs>
+            <path id="badgePath" d="M70,70 m-56,0 a56,56 0 1,1 112,0 a56,56 0 1,1 -112,0"/>
+          </defs>
+          <circle cx="70" cy="70" r="68" fill="var(--neon)"/>
+          <text font-family="'Space Grotesk', sans-serif" font-size="12.6" font-weight="700" letter-spacing="2" fill="var(--ink)">
+            <textPath href="#badgePath" startOffset="0">
+              VOCÊ É A CAUSA · O MUNDO É O EFEITO ·&#160;
+            </textPath>
+          </text>
+        </svg>
+        <span class="hero__badge-center">✷</span>
+      </div>
+
+      <div class="hero__blob" aria-hidden="true"></div>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>causa e efeito</span><span>·</span><span>efeito e causa</span><span>·</span>
+        <span>causa e efeito</span><span>·</span><span>efeito e causa</span><span>·</span>
+        <span>causa e efeito</span><span>·</span><span>efeito e causa</span><span>·</span>
+        <span>causa e efeito</span><span>·</span><span>efeito e causa</span><span>·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MANIFESTO / QUEM SOMOS ===== -->
+  <section class="manifesto" id="manifesto">
+    <div class="wrap manifesto__wrap">
+      <div class="manifesto__tag reveal">
+        <span class="tag">001 — manifesto</span>
+      </div>
+
+      <div class="manifesto__card reveal">
+        <p class="manifesto__q">Quem somos?</p>
+        <p class="dropcap">
+          Ser ou não ser. Desde Shakespeare, essa sempre foi uma questão. Na
+          Causa, seremos quem quisermos. E como quisermos. Este não é um
+          espaço para seguir padrões, repetir discursos ou entregar
+          respostas prontas. É um espaço para pensar. Para questionar. Para
+          discordar. Para mudar de ideia.
+        </p>
+        <p>
+          Se você procura fórmulas prontas, talvez seja melhor recorrer à IA
+          de sua preferência. Enquanto o mundo avança, a passos largos, rumo
+          a uma realidade cada vez mais tecnológica, artificial e guiada por
+          algoritmos, escolhemos caminhar na direção oposta. Aqui, a mente
+          pulsa livre.
+        </p>
+        <p>
+          Falaremos sobre o que der na telha: filmes, livros, música,
+          política, hobbies, devaneios, reflexões e tudo aquilo que desperta
+          boas conversas.
+        </p>
+        <p class="manifesto__final">
+          Tire os sapatos, se acomode e faça parte.<br>
+          <strong>Somos a Causa. O efeito vem aí.</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PILARES ===== -->
+  <section class="pilares" id="pilares">
+    <div class="wrap">
+      <div class="pilares__head reveal">
+        <span class="tag tag--dark">002 — do que falamos por aqui</span>
+        <h2>Cinco causas fixas.<br>Efeitos infinitos.</h2>
+      </div>
+
+      <div class="pilares__grid">
+
+        <a href="pilar-araxa.html" class="pilar pilar--coral reveal" data-cursor="ver">
+          <span class="pilar__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M24 4 6 40h36L24 4Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Araxá &amp; arredores</h3>
+          <p>Trilhas, cachoeiras, achados de fim de semana e tudo que vale o
+          combustível pra sair da cidade.</p>
+          <span class="pilar__link">ver posts →</span>
+        </a>
+
+        <a href="pilar-reflexoes.html" class="pilar pilar--teal reveal" data-cursor="ver">
+          <span class="pilar__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="3"/><path d="M24 14v10l7 4" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Reflexões</h3>
+          <p>Os textos mais abertos e pessoais. Devaneio com começo, sem meio
+          e sem compromisso com o fim.</p>
+          <span class="pilar__link">ver posts →</span>
+        </a>
+
+        <a href="pilar-cultura.html" class="pilar pilar--amber reveal" data-cursor="ver">
+          <span class="pilar__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M14 40V16l10-10 10 10v24" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M20 40V26h8v14" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Cultura</h3>
+          <p>Filmes, música, livros — a veia do jornal do universitário que
+          nunca foi embora.</p>
+          <span class="pilar__link">ver posts →</span>
+        </a>
+
+        <a href="pilar-fontes.html" class="pilar pilar--neon reveal" data-cursor="ver">
+          <span class="pilar__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M8 12h32M8 24h32M8 36h20" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Fontes &amp; achados</h3>
+          <p>Curadoria de links, dados e referências que valem seu tempo de
+          leitura.</p>
+          <span class="pilar__link">ver posts →</span>
+        </a>
+
+        <a href="pilar-esportes.html" class="pilar pilar--verde reveal" data-cursor="ver">
+          <span class="pilar__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="3"/><path d="M6 24h36M24 6c5 5 8 11 8 18s-3 13-8 18c-5-5-8-11-8-18s3-13 8-18Z" fill="none" stroke="currentColor" stroke-width="3"/></svg>
+          </span>
+          <h3>Esportes</h3>
+          <p>Correr, pedalar, caminhar — ou qualquer outra coisa que faça
+          seu corpo (e sua cabeça) feliz.</p>
+          <span class="pilar__link">ver posts →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONVITE / NEWSLETTER ===== -->
+  <section class="convite" id="convite">
+    <div class="wrap convite__wrap">
+      <span class="tag">003 — o convite</span>
+      <h2 class="convite__title">Tire os sapatos.<br>Fique um pouco.</h2>
+      <p class="convite__lede">Um e-mail de vez em quando com o que der na telha —
+      sem spam, sem fórmula, sem robô.</p>
+
+      <form class="convite__form" id="joinForm" novalidate>
+        <input type="email" name="email" placeholder="seu@email.com" required aria-label="Seu e-mail">
+        <button type="submit" class="btn btn--dark" data-cursor="enviar">quero fazer parte</button>
+      </form>
+      <p class="convite__note" id="formNote">Prometemos: nada de fórmulas prontas.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="wrap footer__wrap">
+    <a href="#topo" class="footer__logo" data-cursor="topo">causa<span class="dot">.</span></a>
+
+    <div class="footer__cols">
+      <div class="footer__col">
+        <span class="footer__label">navegar</span>
+        <a href="#manifesto">quem somos</a>
+        <a href="#pilares">pilares</a>
+        <a href="#convite">assine</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__label">social</span>
+        <a href="https://www.instagram.com/causa.blog" target="_blank" rel="noopener">@causa.blog ↗</a>
+        <a href="https://www.instagram.com/juorodrigues" target="_blank" rel="noopener">@juorodrigues ↗</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__label">onde</span>
+        <span>Araxá, Minas Gerais</span>
+        <span>Brasil</span>
+      </div>
+    </div>
+
+    <p class="footer__bottom">causa: onde tudo começa · © <span id="year"></span></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

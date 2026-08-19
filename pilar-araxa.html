@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Araxá & arredores — causa.</title>
+<meta name="description" content="Trilhas, cachoeiras, achados de fim de semana e tudo que vale o combustível pra sair da cidade.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"><span id="cursorLabel"></span></div>
+
+<div class="grain"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__wrap">
+    <a href="index.html" class="nav__logo" data-cursor="início">causa<span class="dot">.</span></a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html#manifesto" data-cursor="ver">quem somos</a>
+      <a href="pilar-araxa.html" data-cursor="ver">Araxá &amp; Arredores</a>
+      <a href="pilar-reflexoes.html" data-cursor="ver">reflexões</a>
+      <a href="pilar-cultura.html" data-cursor="ver">cultura</a>
+      <a href="pilar-esportes.html" data-cursor="ver">esportes</a>
+      <a href="pilar-fontes.html" data-cursor="ver">fontes &amp; achados</a>
+      <a href="index.html#convite" data-cursor="ver">assine</a>
+      <a href="https://www.instagram.com/causa.blog" target="_blank" rel="noopener" data-cursor="abrir">redes sociais</a>
+    </nav>
+
+    <a href="colabore.html" class="btn btn--small btn--coral" data-cursor="colabore">colabore</a>
+
+    <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#manifesto">quem somos</a>
+  <a href="pilar-araxa.html">Araxá &amp; Arredores</a>
+  <a href="pilar-reflexoes.html">reflexões</a>
+  <a href="pilar-cultura.html">cultura</a>
+  <a href="pilar-esportes.html">esportes</a>
+  <a href="pilar-fontes.html">fontes &amp; achados</a>
+  <a href="index.html#convite">assine</a>
+  <a href="https://www.instagram.com/causa.blog" target="_blank" rel="noopener">redes sociais ↗</a>
+  <a href="colabore.html">colabore ↗</a>
+</div>
+
+<main>
+
+  <section class="categoria-hero categoria-hero--coral">
+    <div class="wrap">
+      <a href="index.html#pilares" class="categoria-hero__back" data-cursor="voltar">← todos os pilares</a>
+      <span class="tag tag--coral">ARAXÁ & ARREDORES</span>
+      <h1>Araxá & arredores</h1>
+      <p>Trilhas, cachoeiras, achados de fim de semana e tudo que vale o combustível pra sair da cidade.</p>
+    </div>
+  </section>
+
+  <section class="posts">
+    <div class="wrap">
+      <div class="posts__grid" id="listaPosts">
+        <p class="posts__vazio">Carregando…</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__wrap">
+    <a href="index.html" class="footer__logo" data-cursor="topo">causa<span class="dot">.</span></a>
+
+    <div class="footer__cols">
+      <div class="footer__col">
+        <span class="footer__label">navegar</span>
+        <a href="index.html#manifesto">quem somos</a>
+        <a href="index.html#pilares">pilares</a>
+        <a href="index.html#convite">assine</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__label">social</span>
+        <a href="https://www.instagram.com/causa.blog" target="_blank" rel="noopener">@causa.blog ↗</a>
+        <a href="https://www.instagram.com/juorodrigues" target="_blank" rel="noopener">@juorodrigues ↗</a>
+      </div>
+      <div class="footer__col">
+        <span class="footer__label">onde</span>
+        <span>Araxá, Minas Gerais</span>
+        <span>Brasil</span>
+      </div>
+    </div>
+
+    <p class="footer__bottom">causa: onde tudo começa · © <span id="year"></span></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="posts.js"></script>
+<script>renderizarListaCategoria('araxa');</script>
+</body>
+</html>
