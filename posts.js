@@ -127,7 +127,18 @@ function renderizarArtigo() {
       const cat = CATEGORIAS[artigo.categoria] || { nome: 'causa.', cor: 'dark' };
       document.title = `${artigo.titulo} — causa.`;
 
-      const corpo = artigo.conteudo.map((p) => `<p>${escapeHtml(p)}</p>`).join('');
+      const corpo = artigo.conteudo
+        .map((item) => {
+          if (typeof item === 'string') {
+            return `<p>${escapeHtml(item)}</p>`;
+          }
+          if (item.tipo === 'imagem') {
+            const legenda = item.legenda ? `<figcaption>${escapeHtml(item.legenda)}</figcaption>` : '';
+            return `<figure class="artigo__figura"><img src="${item.src}" alt="${escapeHtml(item.alt || item.legenda || '')}" loading="lazy">${legenda}</figure>`;
+          }
+          return `<p>${escapeHtml(item.texto || '')}</p>`;
+        })
+        .join('');
 
       container.innerHTML = `
         <span class="tag tag--${cat.cor}">${cat.nome}</span>

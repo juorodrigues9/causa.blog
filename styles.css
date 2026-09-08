@@ -303,6 +303,15 @@ body.cursor-active .cursor-ring span{ opacity:1; }
 .artigo__corpo p{
   font-family:var(--serif); font-size:19px; line-height:1.7; margin-bottom:22px; color:var(--ink);
 }
+.artigo__figura{
+  margin:36px 0; border-radius:var(--radius-md); overflow:hidden;
+  border:1.5px solid rgba(28,26,23,.12);
+}
+.artigo__figura img{ width:100%; height:auto; display:block; }
+.artigo__figura figcaption{
+  padding:12px 18px; font-family:var(--sans); font-size:12.5px;
+  color:rgba(28,26,23,.55); text-align:center; background:var(--card);
+}
 .artigo__voltar{
   display:inline-block; margin-top:36px; font-family:var(--sans);
   font-size:13px; font-weight:600; color:var(--coral-d);
